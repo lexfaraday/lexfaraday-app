@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { LoginPage } from './imports/newsletter/neswletter';
 import { CountDown } from './imports/countdown/countdown';
+import {enableProdMode} from '@angular/core';
+enableProdMode();
 
 @Component({
     selector: 'app',
