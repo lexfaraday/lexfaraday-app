@@ -1,0 +1,244 @@
+@import "{}/node_modules/bootstrap/scss/bootstrap.scss";
+@import 'ionic.scss';
+@import 'mediaelementplayer.scss';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Lato", sans-serif !important;
+}
+
+audio {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.starter-template span {
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 24px;
+  display: block;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #000000;
+}
+
+.navbar a.logo img {
+  height: 40px;
+  z-index: 99999;
+  position: relative;
+}
+
+.navbar-collapse .container-fluid {
+  padding: 2rem 2.5rem;
+  border-bottom: 1px solid #55595c;
+}
+
+.navbar-collapse h4 {
+  color: #818a91;
+}
+
+.navbar-collapse .text-muted {
+  color: #818a91;
+}
+
+.about {
+  float: left;
+  max-width: 30rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.social {
+  float: left;
+}
+
+.social a {
+  font-weight: 500;
+  color: #eceeef;
+}
+
+.social a:hover {
+  color: #fff;
+}
+
+.super-header {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0.png"), url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png");
+  background-position: left bottom, center;
+  background-repeat: no-repeat;
+}
+
+.super-header p:last-child {
+  margin-bottom: 0;
+}
+
+.super-header .title {
+  color: #f0f8ff;
+  font-size: 42px;
+  line-height: 0.8;
+  font-family: "Lato", sans-serif !important;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 487px) {
+  .super-header {
+    background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png") !important;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 487px) and (max-width: 1079px) {
+  .super-header {
+    background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png") !important;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .super-header {
+    background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0.png"), url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png") !important;
+    background-position: left bottom, center;
+  }
+}
+
+.social-icon {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 12px 0px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+.social-icon i {
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: -1px;
+}
+
+.social-icon:hover {
+  background-color: #E43F2E;
+  color: #fff;
+  border-color: #E43F2E;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+/**
+ * Custom override bootstrap 4
+ **/
+.card {
+  max-width: 21rem;
+  margin: 1rem;
+  float: left;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-title {
+  display: block;
+  letter-spacing: 2px;
+  color: rgba(19, 19, 19, 0.7);
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.play-button {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.play-button:hover {
+  content: url("https://s3.amazonaws.com/lexfaraday-app-media/images/play-green.png");
+}
+
+.fa {
+  color: #000000 !important;
+}
+
+.black {
+  color: #000000 !important;
+}
+
+.black:hover {
+  color: #E43F2E !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.white:hover {
+  color: #E43F2E !important;
+}
+
+.fa-2 {
+  font-size: 3em !important;
+}
+
+.fa-3 {
+  font-size: 4em !important;
+}
+
+.fa-4 {
+  font-size: 7em !important;
+}
+
+.fa-5 {
+  font-size: 12em !important;
+}
+
+/* - Playback Widget - */
+.playback-widget {
+  position: fixed;
+  bottom: -1px;
+  left: 0;
+  z-index: 9999 !important;
+  width: 100%;
+  background-color: #fff;
+  height: 30px;
+}
+
+.loader-gif {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('/images/ring.gif') no-repeat center center;
+  opacity: 0.8;
+  background-color: #2b2d2f;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  z-index: 9999999;
+}

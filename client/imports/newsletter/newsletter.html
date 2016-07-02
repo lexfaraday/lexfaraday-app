@@ -1,0 +1,14 @@
+<form [ngFormModel]="loginForm" (submit)="doLogin($event)">
+    <input ngControl="email" type="email" placeholder="Your email">
+    <input ngControl="password" type="password" placeholder="Your password">
+    <button type="submit">Log in</button>
+</form>
+
+
+<form class="form-inline">
+<div class="form-group">
+    <label for="exampleInputEmail2">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="your.email@example.com">
+</div>
+<button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
