@@ -1,22 +1,13 @@
-/**
- * Created by lexfa on 18/06/2016.
- */
-
-window.fbAsyncInit = function() {
+window.fbAsyncInit = function () {
     FB.init({
-        appId      : '1125426534175163',
-        xfbml      : true,
-        version    : 'v2.6'
+        appId: '1125426534175163',
+        xfbml: true,
+        version: 'v2.6'
     });
 };
 
-(function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+
+
 
 
 (function (i, s, o, g, r, a, m) {
@@ -55,6 +46,7 @@ function initializeClock(id, endtime) {
         var hoursSpan = clock.querySelector('.hours');
         var minutesSpan = clock.querySelector('.minutes');
         var secondsSpan = clock.querySelector('.seconds');
+
         function updateClock() {
             var t = getTimeRemaining(endtime);
 
@@ -67,34 +59,30 @@ function initializeClock(id, endtime) {
                 clearInterval(timeinterval);
             }
         }
+
         updateClock();
         var timeinterval = setInterval(updateClock, 1000);
     }
 }
 
+
 // TODO move to typescript
 window.onload = function(){
+    var date = new Date(Date.UTC(2016, 6, 10, 12, 0, 0));
+    var now = new Date();
+    var diff = date.getTime() - now.getTime();
+    // 15 * 24 * 60 * 60 * 1000
+    var deadline = new Date(Date.parse(new Date()) + diff);
+    initializeClock('clockdiv', deadline);
 
-    $(document).ready(function() {
-        var date  = new Date(Date.UTC(2016, 6, 10, 12, 0, 0));
-        var now   = new Date();
-        var diff  = date.getTime() - now.getTime();
-        // 15 * 24 * 60 * 60 * 1000
-        var deadline = new Date(Date.parse(new Date()) + diff);
-        initializeClock('clockdiv', deadline);
+    $('#subscribeOK').hide();
 
-
-        $('#subscribeOK').hide();
-
-        $('#contactForm').submit(function () {
-            Meteor.call('subscribeMe', $('#email').val());
-            $('#subscribeOK').show();
-            $('#subscribeOK').hide(1000);
-            return false;
-        });
-
-        $('.loader-gif').fadeOut();
-
+    $('#contactForm').submit(function () {
+        Meteor.call('subscribeMe', $('#email').val());
+        $('#subscribeOK').show();
+        $('#subscribeOK').hide(1000);
+        return false;
     });
-};
 
+    $('.loader-gif').fadeOut();
+};
