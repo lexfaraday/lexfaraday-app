@@ -2,14 +2,14 @@
  * Created by lexfa on 18/06/2016.
  */
 
-
+/*
 window.fbAsyncInit = function () {
     FB.init({
         appId: '1125426534175163',
         status: true,
         xfbml: true
     });
-};
+};*/
 
 
 function getTimeRemaining(endtime) {
