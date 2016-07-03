@@ -169,6 +169,7 @@ audio {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  margin-bottom: 300px;
 }
 
 footer p {
@@ -241,4 +242,8 @@ footer p {
   background-color: #2b2d2f;
   filter: alpha(opacity=80); /* For IE8 and earlier */
   z-index: 9999999;
+}
+
+.navbar-custom {
+  height: 0px;
 }
