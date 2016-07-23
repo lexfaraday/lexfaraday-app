@@ -75,7 +75,7 @@ audio {
   padding-bottom: 6rem;
   margin-bottom: 0;
   background-color: #fff;
-  background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0.png"), url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png");
+  background-image: url("https://lexfaraday-app-media.s3.amazonaws.com/images/head_0.png"), url("https://lexfaraday-app-media.s3.amazonaws.com/images/head_0_black.png");
   background-position: left bottom, center;
   background-repeat: no-repeat;
 }
@@ -95,21 +95,21 @@ audio {
 
 @media screen and (max-width: 487px) {
   .super-header {
-    background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png") !important;
+    background-image: url("https://lexfaraday-app-media.s3.amazonaws.com/images/head_0_black.png") !important;
     background-position: center;
   }
 }
 
 @media screen and (min-width: 487px) and (max-width: 1079px) {
   .super-header {
-    background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png") !important;
+    background-image: url("https://lexfaraday-app-media.s3.amazonaws.com/images/head_0_black.png") !important;
     background-position: center;
   }
 }
 
 @media screen and (min-width: 1080px) {
   .super-header {
-    background-image: url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0.png"), url("https://s3.amazonaws.com/lexfaraday-app-media/images/head_0_black.png") !important;
+    background-image: url("https://lexfaraday-app-media.s3.amazonaws.com/images/head_0.png"), url("https://lexfaraday-app-media.s3.amazonaws.com/images/head_0_black.png") !important;
     background-position: left bottom, center;
   }
 }
@@ -183,7 +183,7 @@ footer p {
 }
 
 .play-button:hover {
-  content: url("https://s3.amazonaws.com/lexfaraday-app-media/images/play-green.png");
+  content: url("https://lexfaraday-app-media.s3.amazonaws.com/images/play-green.png");
 }
 
 .fa {
