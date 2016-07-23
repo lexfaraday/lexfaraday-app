@@ -192,7 +192,7 @@
 	height: 16px;
 	width: 16px;
 	border: 0;
-	background: transparent url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls.svg') no-repeat;
+	background: transparent url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls.svg') no-repeat;
 }
 
 .no-svg .mejs-controls .mejs-button button {
@@ -1043,7 +1043,7 @@ div.mejs-speed-button {
 }
 .mejs-yung .mejs-controls .mejs-time-rail .mejs-time-loaded {
 	//background-color: none;
-	background: url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls-yung.png') repeat-x 0 -52px;
+	background: url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls-yung.png') repeat-x 0 -52px;
 	width: 0;
 	height: 6px;
 }
@@ -1051,7 +1051,7 @@ div.mejs-speed-button {
 	width: 0;
 	height: 6px;
 	//background-color: none;
-	background: url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls-yung.png') repeat-x 0 -59px;
+	background: url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls-yung.png') repeat-x 0 -59px;
 }
 .mejs-yung .mejs-controls .mejs-time-rail .mejs-time-handle  {
 	display: inline-block;
@@ -1123,12 +1123,12 @@ div.mejs-speed-button {
 .mejs-yung .mejs-controls .mejs-fullscreen-button  button {
 	width: 19px;
 	height: 17px;
-	background: transparent url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls-yung.png') no-repeat 0 -66px;
+	background: transparent url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls-yung.png') no-repeat 0 -66px;
 	margin: 0;
 	padding: 0;
 }
 .mejs-yung .mejs-controls .mejs-unfullscreen  button {
-	background: transparent url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls-yung.png') no-repeat -21px -66px;
+	background: transparent url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls-yung.png') no-repeat -21px -66px;
 	margin: 0;
 	padding: 0;
 }
@@ -1191,7 +1191,7 @@ div.mejs-speed-button {
 	top: -65px;
 }
 .mejs-yung  .mejs-controls .mejs-volume-button .mejs-volume-total {
-	background: url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls-yung.png') repeat-y -41px -66px;
+	background: url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls-yung.png') repeat-y -41px -66px;
 	left: 8px;
 	width: 6px;
 	height: 50px;
@@ -1199,7 +1199,7 @@ div.mejs-speed-button {
 .mejs-yung  .mejs-controls .mejs-volume-button .mejs-volume-current {
 	left: 8px;
 	width: 6px;	
-	background: url('https://s3.amazonaws.com/lexfaraday-app-media/images/controls-yung.png') repeat-y -48px -66px;
+	background: url('https://lexfaraday-app-media.s3.amazonaws.com/images/controls-yung.png') repeat-y -48px -66px;
 	height: 50px;
 }
 
