@@ -289,7 +289,7 @@
     $('.mejs-title-playing p').text('');
 
     $('.album-single-widget').mediaelementplayer({
-      loop: false,
+      loop: true,
       shuffle: false,
       audioWidth: '100%',
       playlist: false,
